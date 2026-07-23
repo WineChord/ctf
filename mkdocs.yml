@@ -1,0 +1,126 @@
+site_name: CTF
+site_description: 中文 CTF 与安全知识库：从原理、实验到复盘
+site_author: WineChord
+site_url: https://www.wineandchord.com/ctf/
+repo_name: WineChord/ctf
+repo_url: https://github.com/WineChord/ctf
+edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 WineChord
+
+theme:
+  name: material
+  language: zh
+  favicon: assets/favicon.svg
+  icon:
+    logo: material/shield-lock-outline
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: 切换至深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: 切换至浅色模式
+  font: false
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.path
+    - navigation.top
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - en
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/WineChord
+      name: WineChord on GitHub
+
+nav:
+  - 首页: index.md
+  - 方法与环境:
+      - 学习路线: guide/roadmap.md
+      - 解题方法: guide/methodology.md
+      - 合法边界与实验安全: guide/lab-safety.md
+      - 工具与工作台: guide/tooling.md
+  - 共同基础:
+      - 知识地图: fundamentals/index.md
+      - 字节、编码与端序: fundamentals/bytes-encoding.md
+  - Web 安全: web/index.md
+  - Pwn: pwn/index.md
+  - 逆向工程: reverse/index.md
+  - 密码学: crypto/index.md
+  - 数字取证: forensics/index.md
+  - Misc: misc/index.md
+  - Writeup:
+      - 索引: writeups/index.md
+      - 写作模板: writeups/template.md
+  - 资源: resources.md
+  - 更新日志: changelog.md

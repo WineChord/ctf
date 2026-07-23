@@ -1,0 +1,24 @@
+# Python and MkDocs
+.venv/
+__pycache__/
+*.py[cod]
+.cache/
+site/
+
+# Local analysis state
+.env
+.env.*
+!.env.example
+.gdb_history
+.python_history
+core
+core.*
+workspace/
+downloads/
+artifacts/private/
+*.log
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
