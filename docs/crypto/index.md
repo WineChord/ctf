@@ -15,9 +15,9 @@ CTF 密码题通常不要求“击破正确使用的现代密码学”，而是�
 
 ### 模运算
 
-\[
+$$
 a\equiv b\pmod n \iff n\mid(a-b)
-\]
+$$
 
 需要掌握：
 
@@ -28,7 +28,7 @@ a\equiv b\pmod n \iff n\mid(a-b)
 - 素数与因数分解；
 - 有限域基础。
 
-Python 的 `pow(a, e, m)` 可以高效计算 \(a^e\bmod m\)。
+Python 的 `pow(a, e, m)` 可以高效计算 $a^e\bmod m$。
 
 ### 概率
 
@@ -83,9 +83,9 @@ Hex、Base64、URL 编码和字符替换不提供保密性。先确定转换是�
 
 基础关系：
 
-\[
+$$
 n=pq,\qquad \varphi(n)=(p-1)(q-1),\qquad ed\equiv1\pmod{\varphi(n)}
-\]
+$$
 
 题目常见问题来自：
 
