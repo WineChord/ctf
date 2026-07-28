@@ -2,6 +2,11 @@
 
 CTF 密码题通常不要求“击破正确使用的现代密码学”，而是发现经典密码结构、参数缺陷、随机数问题、协议组合错误或实现泄漏。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-crypto-boundaries" data-asset="crypto-boundaries" markdown="1">
+[![消息表示、密码原语、模式协议和实现环境组成密码系统的四层边界](../assets/figures/original/crypto-boundaries.svg){ loading="lazy" decoding="async" width="960" height="470" }](../assets/figures/original/crypto-boundaries.svg){ .ctf-figure__media }
+<figcaption>算法名称只告诉你使用了哪种原语；题目线索往往来自表示、参数、协议状态和实现环境之间没有守住的不变量。</figcaption>
+</figure>
+
 ## 先分四层
 
 1. **消息表示**：文本如何变成字节与整数；
@@ -140,3 +145,11 @@ Hash 相等、MAC 有效、签名有效分别证明的事情不同。签名验�
 - 把碰撞、原像和第二原像混为一谈；
 - 用浮点数处理大整数；
 - 依赖在线工具却没有记录精确转换链。
+
+## Reference
+
+- [NIST FIPS 197 · Advanced Encryption Standard](https://csrc.nist.gov/pubs/fips/197/final)：AES 原语规范。
+- [NIST SP 800-38A · Block Cipher Modes](https://csrc.nist.gov/pubs/sp/800/38/a/final)：ECB、CBC、CFB、OFB 与 CTR。
+- [RFC 8017 · PKCS #1](https://www.rfc-editor.org/rfc/rfc8017)：RSA 加密、签名与标准编码方案。
+- [RFC 8439 · ChaCha20 and Poly1305](https://www.rfc-editor.org/rfc/rfc8439)：流加密与认证组合的完整实例。
+- [RFC 2104 · HMAC](https://www.rfc-editor.org/rfc/rfc2104)：基于哈希的消息认证码。

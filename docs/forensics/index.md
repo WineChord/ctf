@@ -4,15 +4,10 @@
 
 ## 证据层次
 
-```text
-原始采集
-  ↓ 哈希与保全
-文件 / 磁盘 / 内存 / 流量 / 日志
-  ↓ 解析与标准化
-对象、会话、进程、账号、事件
-  ↓ 时间线与关联
-假设、验证与结论
-```
+<figure class="ctf-figure ctf-figure--wide" id="fig-nist-forensic-process" data-asset="nist-forensic-process" data-source="nist-sp-800-86" markdown="1">
+[![NIST 取证流程由 Collection、Examination、Analysis 和 Reporting 四阶段组成，并把介质逐步转化为证据](../assets/figures/external/nist-forensic-process.png){ loading="lazy" decoding="async" width="1180" height="430" }](https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf#page=25){ .ctf-figure__media }
+<figcaption>NIST SP 800-86，Figure 3-1（PDF 第 25 页，印刷页码 3-1）的精确裁剪。<a href="https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf#page=25">查看原页</a>；Republished courtesy of the National Institute of Standards and Technology，<a href="https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications">复用声明</a>。</figcaption>
+</figure>
 
 解析工具的输出是对原始证据的一种解释。关键结论应能追溯到文件偏移、数据包、内存地址或日志记录。
 
@@ -129,3 +124,11 @@
 - 内存进程与连接；
 - 日志关联和时间线；
 - 图片、音频与容器隐写。
+
+## Reference
+
+- [NIST SP 800-86 · Guide to Integrating Forensic Techniques into Incident Response](https://doi.org/10.6028/NIST.SP.800-86)：文件、操作系统、网络和应用数据的取证流程。
+- [RFC 3227 · Guidelines for Evidence Collection and Archiving](https://www.rfc-editor.org/rfc/rfc3227)：证据采集顺序、完整性与归档。
+- [Volatility 3 Documentation](https://volatility3.readthedocs.io/)：内存镜像分析框架。
+- [Wireshark User’s Guide](https://www.wireshark.org/docs/wsug_html_chunked/)：网络采集与协议分析。
+- [The Sleuth Kit Documentation](https://sleuthkit.org/sleuthkit/docs/)：磁盘镜像与文件系统分析接口。

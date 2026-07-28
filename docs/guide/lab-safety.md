@@ -13,6 +13,11 @@
 
 CTF 平台的授权通常只覆盖题目提供的实例，不覆盖平台基础设施、其他选手、第三方服务或相邻网段。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-authorized-lab" data-asset="authorized-lab" markdown="1">
+[![目标、授权、时间和动作四项边界共同约束一个资源受控的隔离实验室](../assets/figures/original/authorized-lab.svg){ loading="lazy" decoding="async" width="960" height="430" }](../assets/figures/original/authorized-lab.svg){ .ctf-figure__media }
+<figcaption>授权边界回答“可以对什么做什么”，隔离环境回答“如何把意外影响限制在可回滚范围内”。</figcaption>
+</figure>
+
 ## 环境隔离
 
 推荐按风险从低到高选择：
@@ -83,3 +88,9 @@ CTF 平台的授权通常只覆盖题目提供的实例，不覆盖平台基础�
 5. 按政策进行负责任披露。
 
 不要为了“证明影响”继续扩大操作。
+
+## Reference
+
+- [NIST SP 800-115 · Technical Guide to Information Security Testing and Assessment](https://csrc.nist.gov/pubs/sp/800/115/final)：测试范围、规则与评估流程。
+- [CISA · Vulnerability Disclosure Policy Template](https://www.cisa.gov/vulnerability-disclosure-policy-template)：授权范围、善意研究与报告渠道的公开模板。
+- [OWASP Web Security Testing Guide · Introduction and Objectives](https://owasp.org/www-project-web-security-testing-guide/stable/0-Foreword/README)：合法、结构化 Web 安全测试的目标与边界。

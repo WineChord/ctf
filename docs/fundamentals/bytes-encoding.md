@@ -153,6 +153,11 @@ if __name__ == "__main__":
 
 端序只对多字节对象有意义；单个字节没有端序。网络协议常用大端，因此也称 network byte order；x86/x86-64 内存通常是小端。
 
+<figure class="ctf-figure ctf-figure--portrait" id="fig-big-endian" data-asset="big-endian" data-source="wikimedia-big-endian" markdown="1">
+[![32 位整数 0A0B0C0D 在大端内存中依次存为 0A、0B、0C、0D](../assets/figures/external/big-endian.png){ loading="lazy" decoding="async" width="840" height="750" }](https://commons.wikimedia.org/w/index.php?title=File:Big-Endian.svg&oldid=823465610){ .ctf-figure__media }
+<figcaption>大端序把最高有效字节放在最低地址。图：R. S. Shaw，<a href="https://commons.wikimedia.org/w/index.php?title=File:Big-Endian.svg&amp;oldid=823465610">Wikimedia Commons 固定版本</a>；作者释入 <a href="https://commons.wikimedia.org/wiki/File:Big-Endian.svg#Licensing">Public Domain</a>。本站版本仅栅格化、补白并移除元数据。</figcaption>
+</figure>
+
 Python `struct` 能明确指定布局：
 
 ```python
@@ -304,3 +309,11 @@ shasum -a 256 ./sample.bin
 - **密码**：消息到整数的映射、填充、块和 XOR；
 - **取证**：魔数、文件雕刻、编码日志和嵌套容器；
 - **Misc**：多层编码、二维码、协议和自动化转换。
+
+## Reference
+
+- [The Unicode Standard](https://www.unicode.org/versions/latest/)：码点、编码形式和字符语义。
+- [RFC 3629 · UTF-8](https://www.rfc-editor.org/rfc/rfc3629)：UTF-8 的字节结构与合法范围。
+- [RFC 4648 · Base-N Encodings](https://www.rfc-editor.org/rfc/rfc4648)：Base16、Base32 与 Base64。
+- [Python Documentation · Binary Sequence Types](https://docs.python.org/3/library/stdtypes.html#binary-sequence-types-bytes-bytearray-memoryview)：`bytes` 与 `bytearray`。
+- [Python Documentation · struct](https://docs.python.org/3/library/struct.html)：字节序、位宽与二进制布局。

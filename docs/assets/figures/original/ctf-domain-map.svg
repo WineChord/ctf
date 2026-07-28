@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">CTF 知识地图</title>
+  <desc id="desc">共同基础和证据驱动方法连接 Web、Pwn、逆向、密码、取证与 Misc 六个方向。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8Z" fill="#55706f"/></marker>
+    <style>text{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#1f2a30}.label{font-size:20px;font-weight:600}.small{font-size:15px;fill:#526168}.box{fill:#fff;stroke:#cad4d1;stroke-width:1.5}.domain{fill:#f4f8f7;stroke:#86aaa4;stroke-width:1.5}.line{stroke:#55706f;stroke-width:1.8;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="960" height="430" rx="18" fill="#fbfaf7"/>
+  <rect x="335" y="145" width="290" height="140" rx="18" fill="#e9f2f0" stroke="#0f766e" stroke-width="2"/>
+  <text x="480" y="191" text-anchor="middle" class="label">证据 → 模型 → 实验</text>
+  <text x="480" y="224" text-anchor="middle" class="small">从原始对象出发，提出可证伪假设</text>
+  <text x="480" y="250" text-anchor="middle" class="small">在授权环境复现，再回到原理</text>
+  <rect x="60" y="45" width="220" height="72" rx="12" class="box"/>
+  <text x="170" y="78" text-anchor="middle" class="label">共同基础</text>
+  <text x="170" y="101" text-anchor="middle" class="small">字节 · 系统 · 网络 · 调试</text>
+  <rect x="680" y="45" width="220" height="72" rx="12" class="box"/>
+  <text x="790" y="78" text-anchor="middle" class="label">复盘与迁移</text>
+  <text x="790" y="101" text-anchor="middle" class="small">Writeup · 变种 · 防御</text>
+  <path d="M280 82C370 82 365 145 410 145" class="line"/>
+  <path d="M550 145C595 145 590 82 680 82" class="line"/>
+  <g class="domain">
+    <rect x="55" y="325" width="125" height="58" rx="12"/><rect x="200" y="325" width="125" height="58" rx="12"/>
+    <rect x="345" y="325" width="125" height="58" rx="12"/><rect x="490" y="325" width="125" height="58" rx="12"/>
+    <rect x="635" y="325" width="125" height="58" rx="12"/><rect x="780" y="325" width="125" height="58" rx="12"/>
+  </g>
+  <g class="label" text-anchor="middle">
+    <text x="117" y="361">Web</text><text x="262" y="361">Pwn</text><text x="407" y="361">逆向</text>
+    <text x="552" y="361">密码</text><text x="697" y="361">取证</text><text x="842" y="361">Misc</text>
+  </g>
+  <path d="M480 285V306H117V325M480 306H262V325M480 306H407V325M480 306H552V325M480 306H697V325M480 306H842V325" stroke="#55706f" stroke-width="1.6" fill="none"/>
+</svg>

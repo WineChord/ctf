@@ -12,6 +12,11 @@
 
 高质量结论通常由三者互相校准。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-reverse-triangulation" data-asset="reverse-triangulation" markdown="1">
+[![静态分析、动态分析和黑盒实验共同约束一个可检验的程序语义模型](../assets/figures/original/reverse-triangulation.svg){ loading="lazy" decoding="async" width="960" height="460" }](../assets/figures/original/reverse-triangulation.svg){ .ctf-figure__media }
+<figcaption>静态结果描述“可能发生什么”，动态结果描述“这次发生了什么”，黑盒实验则限制“输入和输出必须满足什么”。</figcaption>
+</figure>
+
 ## 程序恢复层次
 
 ```text
@@ -119,3 +124,11 @@
 6. 类型恢复和脚本验证；
 7. 编译器优化与高级运行时；
 8. 混淆、虚拟机和特定平台。
+
+## Reference
+
+- [Ghidra Documentation](https://ghidra-sre.org/)：反汇编、反编译和程序数据库。
+- [GDB Documentation](https://sourceware.org/gdb/documentation/)：断点、寄存器与运行时状态。
+- [Intel 64 and IA-32 Architectures Software Developer Manuals](https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html)：x86 指令和系统语义。
+- [System V ABI · ELF Specification](https://refspecs.linuxfoundation.org/elf/elf.pdf)：ELF 文件与装载结构。
+- [radare2 Official Book](https://book.rada.re/)：命令行静态和动态分析工作流。

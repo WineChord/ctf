@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="480" viewBox="0 0 960 480" role="img" aria-labelledby="title desc">
+  <title id="title">从源码到运行时状态</title>
+  <desc id="desc">源码经过编译、链接和装载成为进程；文件偏移、虚拟地址、内存权限、寄存器与系统调用属于不同证据层。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#55706f"/></marker>
+    <style>text{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#202b31}.h{font-size:19px;font-weight:650}.s{font-size:14px;fill:#59666c}.box{fill:#fff;stroke:#cad4d1;stroke-width:1.5}.line{stroke:#55706f;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="960" height="480" rx="18" fill="#fbfaf7"/>
+  <g class="box">
+    <rect x="35" y="62" width="165" height="90" rx="14"/><rect x="275" y="62" width="165" height="90" rx="14"/>
+    <rect x="515" y="62" width="165" height="90" rx="14"/><rect x="755" y="62" width="165" height="90" rx="14"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="117" y="101" class="h">源码</text><text x="117" y="127" class="s">类型 · 对象 · 生命周期</text>
+    <text x="357" y="101" class="h">目标文件</text><text x="357" y="127" class="s">节 · 符号 · 重定位</text>
+    <text x="597" y="101" class="h">ELF 映像</text><text x="597" y="127" class="s">段 · 依赖 · 入口</text>
+    <text x="837" y="101" class="h">运行进程</text><text x="837" y="127" class="s">寄存器 · 内存 · 系统调用</text>
+  </g>
+  <path d="M200 107H275M440 107H515M680 107H755" class="line"/>
+  <text x="237" y="94" text-anchor="middle" class="s">编译</text><text x="477" y="94" text-anchor="middle" class="s">链接</text><text x="717" y="94" text-anchor="middle" class="s">装载</text>
+  <rect x="90" y="230" width="780" height="175" rx="18" fill="#eef4f3" stroke="#84aaa3" stroke-width="1.5"/>
+  <text x="480" y="260" text-anchor="middle" class="h">运行时地址空间（示意）</text>
+  <g>
+    <rect x="125" y="290" width="120" height="72" rx="8" fill="#dce9e6"/><rect x="245" y="290" width="120" height="72" rx="8" fill="#d7e3ee"/>
+    <rect x="365" y="290" width="120" height="72" rx="8" fill="#eadfca"/><rect x="485" y="290" width="120" height="72" rx="8" fill="#e8d8d4"/>
+    <rect x="605" y="290" width="120" height="72" rx="8" fill="#ddd9e9"/><rect x="725" y="290" width="110" height="72" rx="8" fill="#dce9e6"/>
+  </g>
+  <g text-anchor="middle" class="s"><text x="185" y="332">代码 / 只读</text><text x="305" y="332">全局数据</text><text x="425" y="332">堆 →</text><text x="545" y="332">映射</text><text x="665" y="332">共享库</text><text x="780" y="332">← 栈</text></g>
+  <text x="480" y="439" text-anchor="middle" class="s">保护机制约束的是特定层；先证明读、写、控制等原语，再判断组合路径</text>
+</svg>

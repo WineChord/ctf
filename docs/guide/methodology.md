@@ -2,6 +2,11 @@
 
 CTF 经常奖励创造性，但稳定的创造性仍依赖方法。下面的流程适用于多数分类：先建立证据边界，再分层建模，用最小实验排除假设，最后把结果整理成可复现知识。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-method-cycle" data-asset="method-cycle" markdown="1">
+[![原始证据经过低成本观察、可证伪假设、最小实验、交叉验证和干净复现形成结论](../assets/figures/original/method-cycle.svg){ loading="lazy" decoding="async" width="960" height="440" }](../assets/figures/original/method-cycle.svg){ .ctf-figure__media }
+<figcaption>失败实验不是需要隐藏的岔路：只要判据稳定，它会更新假设并缩小下一轮搜索空间。</figcaption>
+</figure>
+
 ## 1. 先确认范围
 
 记录：
@@ -148,3 +153,9 @@ file original/challenge.bin
 - [ ] 是否可以构造更小的本地样本？
 - [ ] 是否记录了失败输入，而不是反复重试同一路径？
 - [ ] 当前操作仍在明确授权范围内吗？
+
+## Reference
+
+- [NIST SP 800-86 · Guide to Integrating Forensic Techniques into Incident Response](https://doi.org/10.6028/NIST.SP.800-86)：采集、检验、分析与报告之间的证据链。
+- [NIST SP 800-115 · Technical Guide to Information Security Testing and Assessment](https://csrc.nist.gov/pubs/sp/800/115/final)：测试计划、执行、分析与缓解建议。
+- [The Turing Way · Reproducible Research](https://book.the-turing-way.org/reproducible-research/reproducible-research)：环境、数据与计算步骤的可复现组织方法。

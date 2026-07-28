@@ -2,6 +2,11 @@
 
 工具箱应围绕可复现流程组织，而不是按“安装过什么”堆积。每个工具都要知道输入、输出、修改行为、版本和可能的误判。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-evidence-pipeline" data-asset="evidence-pipeline" markdown="1">
+[![原始对象经过工具解析形成候选解释，再由独立验证支持有限结论](../assets/figures/original/evidence-pipeline.svg){ loading="lazy" decoding="async" width="960" height="390" }](../assets/figures/original/evidence-pipeline.svg){ .ctf-figure__media }
+<figcaption>工具把字节转换成更易观察的表示；关键结论仍要回到规范、原始数据或运行时行为验证。</figcaption>
+</figure>
+
 ## 基础工作台
 
 | 层次 | 常用工具 | 主要用途 |
@@ -106,3 +111,11 @@ shasum -a 256 ./challenge
 | 字符串出现域名 | 样本包含该字节序列，不证明实际连接 |
 
 工具版本变化会改变识别和反编译结果。关键结论要回到原始字节、协议或运行时行为验证。
+
+## Reference
+
+- [Python Documentation · venv](https://docs.python.org/3/library/venv.html)：隔离 Python 环境。
+- [Wireshark User’s Guide](https://www.wireshark.org/docs/wsug_html_chunked/)：采集、显示过滤与协议分析。
+- [GDB Documentation](https://sourceware.org/gdb/documentation/)：调试器手册。
+- [Ghidra Documentation](https://ghidra-sre.org/)：静态分析平台与官方文档入口。
+- [pwntools Documentation](https://docs.pwntools.com/)：二进制交互、封装与日志接口。

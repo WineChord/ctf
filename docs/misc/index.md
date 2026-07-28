@@ -2,6 +2,11 @@
 
 Misc 不是“没有分类”，而是强调快速建模、跨领域迁移和自动化。题目可能涉及编程、协议、Jail、OSINT、二维码、音频、游戏、区块链或自定义系统。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-misc-triage" data-asset="misc-triage" markdown="1">
+[![陌生对象先按文本字节、媒体容器、交互协议和状态系统分类，再选择相应实验路径](../assets/figures/original/misc-triage.svg){ loading="lazy" decoding="async" width="960" height="470" }](../assets/figures/original/misc-triage.svg){ .ctf-figure__media }
+<figcaption>先确定可观察对象和成功判据，再决定是否需要格式解析、协议自动化、搜索优化或跨域工具。</figcaption>
+</figure>
+
 ## 第一轮分类
 
 先问：
@@ -108,3 +113,11 @@ Misc 最值得记录的是：
 - 哪些低成本实验迅速排除了方向；
 - 自动化的稳定判定条件是什么；
 - 如果重新分类，它应连接到哪个专题。
+
+## Reference
+
+- [Python Documentation · socket](https://docs.python.org/3/library/socket.html)：基于字节流的网络交互接口。
+- [Python Documentation · ast](https://docs.python.org/3/library/ast.html)：Python 语法树与受限语法分析的基础接口。
+- [W3C · PNG Specification](https://www.w3.org/TR/png/)：PNG 文件结构、块与校验。
+- [DENSO WAVE · QR Code Features](https://www.qrcode.com/en/about/standards.html)：二维码标准、结构与纠错概览。
+- [Ethereum Documentation · Smart contract security](https://ethereum.org/en/developers/docs/smart-contracts/security/)：合约状态、交互与防御背景。

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="470" viewBox="0 0 960 470" role="img" aria-labelledby="title desc">
+  <title id="title">密码系统的四层边界</title>
+  <desc id="desc">消息表示、密码原语、模式协议和实现环境逐层组合；CTF 问题通常来自层间假设、参数或实现，而非正确原语本身。</desc>
+  <defs><style>text{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#202b31}.h{font-size:20px;font-weight:650}.s{font-size:14px;fill:#59666c}.tag{font-size:18px;font-weight:650}</style></defs>
+  <rect width="960" height="470" rx="18" fill="#fbfaf7"/>
+  <g>
+    <rect x="95" y="320" width="770" height="82" rx="14" fill="#e5eeec" stroke="#84aaa3" stroke-width="1.5"/>
+    <rect x="135" y="235" width="690" height="82" rx="14" fill="#dce7ef" stroke="#6f96b2" stroke-width="1.5"/>
+    <rect x="175" y="150" width="610" height="82" rx="14" fill="#e9dfcf" stroke="#ad8952" stroke-width="1.5"/>
+    <rect x="215" y="65" width="530" height="82" rx="14" fill="#eadbd7" stroke="#ad6b53" stroke-width="1.5"/>
+  </g>
+  <g text-anchor="middle">
+    <text x="480" y="352" class="h">消息表示</text><text x="480" y="380" class="s">文本 ↔ 字节 ↔ 整数；长度、端序与编码</text>
+    <text x="480" y="267" class="h">密码原语</text><text x="480" y="295" class="s">加密 · 哈希 · MAC · 签名 · 密钥交换</text>
+    <text x="480" y="182" class="h">模式与协议</text><text x="480" y="210" class="s">Nonce · IV · Padding · 认证 · 状态</text>
+    <text x="480" y="97" class="h">实现与环境</text><text x="480" y="125" class="s">随机数 · 复用 · 错误差异 · 时间与泄漏</text>
+  </g>
+  <path d="M790 360C895 360 895 106 750 106" stroke="#8d5f52" stroke-width="2" stroke-dasharray="7 5" fill="none"/>
+  <text x="865" y="238" text-anchor="middle" class="tag" transform="rotate(-90 865 238)">跨层不变量最容易被破坏</text>
+  <text x="480" y="438" text-anchor="middle" class="s">先定位问题属于哪一层，再写数学关系或安全前提</text>
+</svg>

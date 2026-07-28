@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="390" viewBox="0 0 960 390" role="img" aria-labelledby="title desc">
+  <title id="title">工具输出的证据链</title>
+  <desc id="desc">原始对象经过只读采集和工具解析形成候选解释，再由独立验证支持有限结论；工具输出不是事实本身。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#55706f"/></marker>
+    <style>text{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#202b31}.h{font-size:19px;font-weight:650}.s{font-size:14px;fill:#59666c}.box{fill:#fff;stroke:#cad4d1;stroke-width:1.5}.line{stroke:#55706f;stroke-width:2;fill:none;marker-end:url(#arrow)}</style>
+  </defs>
+  <rect width="960" height="390" rx="18" fill="#fbfaf7"/>
+  <g class="box"><rect x="45" y="125" width="160" height="100" rx="14"/><rect x="260" y="125" width="160" height="100" rx="14"/><rect x="540" y="125" width="160" height="100" rx="14"/><rect x="755" y="125" width="160" height="100" rx="14"/></g>
+  <g text-anchor="middle">
+    <text x="125" y="164" class="h">原始对象</text><text x="125" y="194" class="s">文件 · 流量 · 进程</text>
+    <text x="340" y="164" class="h">工具解析</text><text x="340" y="194" class="s">版本 + 参数 + 输出</text>
+    <text x="620" y="164" class="h">独立验证</text><text x="620" y="194" class="s">字节 · 规范 · 运行时</text>
+    <text x="835" y="164" class="h">有限结论</text><text x="835" y="194" class="s">事实、推断与边界</text>
+  </g>
+  <path d="M205 175H260M420 175H540M700 175H755" class="line"/>
+  <rect x="450" y="62" width="80" height="226" rx="38" fill="#f9ede8" stroke="#b56a50" stroke-width="1.6"/>
+  <text x="490" y="152" text-anchor="middle" class="h" transform="rotate(-90 490 152)">候选解释</text>
+  <text x="490" y="248" text-anchor="middle" class="s" transform="rotate(-90 490 248)">不是事实本身</text>
+  <path d="M340 225V315H620V225" stroke="#8a9b97" stroke-width="1.7" stroke-dasharray="6 5" fill="none" marker-end="url(#arrow)"/>
+  <text x="480" y="345" text-anchor="middle" class="s">第二工具若共享同一解析库，并不构成真正独立的证据</text>
+</svg>

@@ -4,21 +4,10 @@ Web 题的核心不是记住请求片段，而是追踪数据穿过浏览器、�
 
 ## 请求生命周期
 
-```text
-用户操作
-  ↓
-浏览器：URL、DOM、Cookie、同源策略
-  ↓
-HTTP：方法、路径、头、正文、重定向
-  ↓
-代理 / CDN / Web Server
-  ↓
-框架：路由、参数解析、中间件、模板
-  ↓
-业务逻辑：身份、权限、状态机
-  ↓
-数据库 / 文件 / 内部服务 / 外部 API
-```
+<figure class="ctf-figure ctf-figure--wide" id="fig-web-trust-boundaries" data-asset="web-trust-boundaries" markdown="1">
+[![Web 请求依次经过浏览器、边缘组件、应用和数据服务，并跨越解释、信任和权限边界](../assets/figures/original/web-trust-boundaries.svg){ loading="lazy" decoding="async" width="960" height="500" }](../assets/figures/original/web-trust-boundaries.svg){ .ctf-figure__media }
+<figcaption>同一串字节在不同组件中可能拥有不同语义；安全分析要同时追踪数据流和每次跨边界时重新建立的信任。</figcaption>
+</figure>
 
 题目往往发生在边界处：两个组件对路径、编码、长度、Host、参数或身份状态的理解不同。
 
@@ -155,3 +144,11 @@ SQL / Shell / 模板 / 路径 / HTML / 反序列化入口
 5. 身份、访问控制和业务逻辑；
 6. 文件、SSRF、缓存和协议差异；
 7. 防御设计与日志检测。
+
+## Reference
+
+- [RFC 9110 · HTTP Semantics](https://www.rfc-editor.org/rfc/rfc9110)：HTTP 方法、字段、状态和资源语义。
+- [WHATWG URL Standard](https://url.spec.whatwg.org/)：URL 解析、序列化与规范化。
+- [MDN · Same-origin policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy)：浏览器同源边界。
+- [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/)：分层 Web 测试方法。
+- [OWASP Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)：服务端授权设计与验证。

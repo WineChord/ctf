@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="430" viewBox="0 0 960 430" role="img" aria-labelledby="title desc">
+  <title id="title">共同基础的分层关系</title>
+  <desc id="desc">位与字节构成整数和文本，进而形成文件、协议和指令；运行时、操作系统与实验方法贯穿所有层。</desc>
+  <defs><style>text{font-family:"PingFang SC","Noto Sans CJK SC",sans-serif;fill:#202b31}.h{font-size:19px;font-weight:650}.s{font-size:14px;fill:#59666c}.vertical{font-size:18px;font-weight:650;fill:#59666c}.layer{stroke:#fff;stroke-width:2}</style></defs>
+  <rect width="960" height="430" rx="18" fill="#fbfaf7"/>
+  <g text-anchor="middle">
+    <path d="M250 335H710L665 390H295Z" fill="#dfeceb" class="layer"/><text x="480" y="367" class="h">位、字节、整数与文本</text>
+    <path d="M215 270H745L700 335H260Z" fill="#cee2df" class="layer"/><text x="480" y="309" class="h">文件格式 · 网络协议 · 机器指令</text>
+    <path d="M180 205H780L735 270H225Z" fill="#b9d6d2" class="layer"/><text x="480" y="244" class="h">进程 · 内存 · 文件系统 · 浏览器</text>
+    <path d="M145 140H815L770 205H190Z" fill="#9fc6c0" class="layer"/><text x="480" y="179" class="h">Web · Pwn · 逆向 · 密码 · 取证 · Misc</text>
+  </g>
+  <rect x="65" y="65" width="830" height="50" rx="12" fill="#fff" stroke="#cad4d1" stroke-width="1.5"/>
+  <text x="480" y="96" text-anchor="middle" class="h">观察、脚本、调试与最小实验贯穿每一层</text>
+  <path d="M115 125V380M845 125V380" stroke="#a76d52" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="93" y="260" text-anchor="middle" class="vertical" transform="rotate(-90 93 260)">显式记录位宽、端序与边界</text>
+  <text x="867" y="260" text-anchor="middle" class="vertical" transform="rotate(90 867 260)">从工具输出回到原始证据</text>
+</svg>

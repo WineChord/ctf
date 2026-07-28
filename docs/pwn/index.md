@@ -6,17 +6,10 @@ Pwn 研究程序在真实机器模型中的行为：源代码经过编译、链�
 
 ## 从源码到进程
 
-```text
-C / C++ 源码
-  ↓ 编译
-目标文件：指令、节、符号、重定位
-  ↓ 链接
-ELF 可执行文件 / 共享库
-  ↓ 装载
-虚拟地址空间、权限、动态链接
-  ↓ 执行
-寄存器、栈、堆、系统调用
-```
+<figure class="ctf-figure ctf-figure--wide" id="fig-pwn-layers" data-asset="pwn-layers" markdown="1">
+[![源码经过编译、链接和装载成为包含代码、数据、堆、映射、共享库和栈的运行进程](../assets/figures/original/pwn-layers.svg){ loading="lazy" decoding="async" width="960" height="480" }](../assets/figures/original/pwn-layers.svg){ .ctf-figure__media }
+<figcaption>文件偏移、虚拟地址和某次调试中的寄存器值属于不同坐标系；先确认当前证据所在层，再连接它们。</figcaption>
+</figure>
 
 每一层都有自己的证据：源码推断、反汇编、ELF 元数据、调试器状态和运行时系统调用不能混为一谈。
 
@@ -140,3 +133,11 @@ CTF 解题应先证明错误原语：能读什么、写什么、控制什么、�
 8. 现代缓解机制与修复。
 
 练习平台：[pwn.college](https://pwn.college/) 提供分层课程和隔离挑战。
+
+## Reference
+
+- [System V ABI · ELF Specification](https://refspecs.linuxfoundation.org/elf/elf.pdf)：ELF 结构、装载与动态链接。
+- [System V AMD64 ABI](https://gitlab.com/x86-psABIs/x86-64-ABI)：x86-64 调用约定和进程接口。
+- [Linux man-pages](https://man7.org/linux/man-pages/)：系统调用、内存映射和进程接口。
+- [GDB Documentation](https://sourceware.org/gdb/documentation/)：运行时调试器参考。
+- [pwn.college](https://pwn.college/)：隔离环境中的系统安全课程与挑战。

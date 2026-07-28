@@ -1,0 +1,239 @@
+{
+  "schema_version": 1,
+  "verified": "2026-07-28",
+  "sources": [
+    {
+      "id": "wikimedia-big-endian",
+      "kind": "open-media",
+      "title": "Big-Endian.svg",
+      "canonical_url": "https://commons.wikimedia.org/w/index.php?title=File:Big-Endian.svg&oldid=823465610",
+      "artifact_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Big-Endian.svg",
+      "artifact_sha256": "c44aa7fbd60365daa590719e6e7ccc63740dee9a0193ecf33dff73e29e2552a8",
+      "revision": "Wikimedia Commons oldid 823465610; file SHA-1 1595ed83d5c63069fd59d6c48ab9cdbef8f23a28",
+      "retrieved": "2026-07-28",
+      "creator": "R. S. Shaw",
+      "license": {
+        "name": "Public Domain dedication by the creator",
+        "url": "https://commons.wikimedia.org/wiki/File:Big-Endian.svg#Licensing",
+        "credit": "Big-Endian.svg by R. S. Shaw"
+      }
+    },
+    {
+      "id": "nist-sp-800-86",
+      "kind": "technical-report",
+      "title": "Guide to Integrating Forensic Techniques into Incident Response",
+      "canonical_url": "https://doi.org/10.6028/NIST.SP.800-86",
+      "artifact_url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-86.pdf",
+      "artifact_sha256": "ea7eb645bcd3feaf3ab9ea7dfc3c8987a08bf260c40682df1e5e8292bf9fe9b4",
+      "revision": "NIST SP 800-86, Final, August 2006, 121 PDF pages",
+      "retrieved": "2026-07-28",
+      "creator": "Karen Kent, Suzanne Chevalier, Tim Grance, and Hung Dang; National Institute of Standards and Technology",
+      "license": {
+        "name": "NIST Technical Series reuse terms",
+        "url": "https://www.nist.gov/open/copyright-fair-use-and-licensing-statements-srd-data-software-and-technical-series-publications",
+        "credit": "Republished courtesy of the National Institute of Standards and Technology."
+      }
+    }
+  ],
+  "assets": [
+    {
+      "id": "ctf-domain-map",
+      "file": "original/ctf-domain-map.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 430],
+      "sha256": "68233fef3af60ce7a952f9154c0fbcbdc049029ea604df84d9b7d813ac71b09f",
+      "title": "CTF 知识地图",
+      "alt": "共同基础和证据驱动方法连接 Web、Pwn、逆向、密码、取证与 Misc 六个方向",
+      "license": "MIT",
+      "placements": [{"page": "docs/index.md", "figure_id": "fig-ctf-domain-map", "role": "wide"}]
+    },
+    {
+      "id": "learning-route",
+      "file": "original/learning-route.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 380],
+      "sha256": "4c3b2e34a3c3177ff3beb8596f3b8400909a44fa086ce0857e41aa7fbd04e48e",
+      "title": "CTF 学习路线",
+      "alt": "从安全边界、共同基础到主方向深挖和迁移复盘的学习路线",
+      "license": "MIT",
+      "placements": [{"page": "docs/guide/roadmap.md", "figure_id": "fig-learning-route", "role": "wide"}]
+    },
+    {
+      "id": "method-cycle",
+      "file": "original/method-cycle.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 440],
+      "sha256": "d6754fd5256fccbd1a2705d491bcd66ac7afb5b26fdb5a36623c75309b9201a3",
+      "title": "证据驱动的解题闭环",
+      "alt": "原始证据经过低成本观察、可证伪假设、最小实验、交叉验证和干净复现形成结论",
+      "license": "MIT",
+      "placements": [{"page": "docs/guide/methodology.md", "figure_id": "fig-method-cycle", "role": "wide"}]
+    },
+    {
+      "id": "authorized-lab",
+      "file": "original/authorized-lab.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 430],
+      "sha256": "c2be426cc321d8e6cb6b3e8279a8374b08132d0371f0839c7e953be8d81e5783",
+      "title": "授权范围与隔离实验环境",
+      "alt": "目标、授权、时间和动作四项边界共同约束一个资源受控的隔离实验室",
+      "license": "MIT",
+      "placements": [{"page": "docs/guide/lab-safety.md", "figure_id": "fig-authorized-lab", "role": "wide"}]
+    },
+    {
+      "id": "evidence-pipeline",
+      "file": "original/evidence-pipeline.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 390],
+      "sha256": "f2b544154d4d5bd945bc4f58aa483466b2405736c86b48b838489ae9818547b7",
+      "title": "工具输出的证据链",
+      "alt": "原始对象经过工具解析形成候选解释，再由独立验证支持有限结论",
+      "license": "MIT",
+      "placements": [{"page": "docs/guide/tooling.md", "figure_id": "fig-evidence-pipeline", "role": "wide"}]
+    },
+    {
+      "id": "foundation-stack",
+      "file": "original/foundation-stack.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 430],
+      "sha256": "007416a1c805581dddabd3fc2e1a38a1be923bb71d03f05d175bee615012775c",
+      "title": "共同基础的分层关系",
+      "alt": "位和字节向上构成文件、协议、进程和各类 CTF 问题的分层关系",
+      "license": "MIT",
+      "placements": [{"page": "docs/fundamentals/index.md", "figure_id": "fig-foundation-stack", "role": "wide"}]
+    },
+    {
+      "id": "big-endian",
+      "file": "external/big-endian.png",
+      "origin": "external",
+      "source_id": "wikimedia-big-endian",
+      "format": "PNG",
+      "dimensions": [840, 750],
+      "sha256": "df5057a287436e9d6c3e646b9177432951bbd43181fc39284c5130b47b3f4ae3",
+      "title": "32 位整数的大端内存布局",
+      "alt": "32 位整数 0A0B0C0D 在大端内存中依次存为 0A、0B、0C、0D",
+      "source_label": "File:Big-Endian.svg",
+      "transform": {
+        "renderer": "rsvg-convert 2.62.3",
+        "operation": "Rasterized at 840 × 750, flattened onto white, metadata stripped; no crop or content alteration"
+      },
+      "visible_text": "32-bit integer; 0A0B0C0D; Memory; a; a+1; a+2; a+3; 0A; 0B; 0C; 0D; Big-endian",
+      "placements": [{"page": "docs/fundamentals/bytes-encoding.md", "figure_id": "fig-big-endian", "role": "portrait"}]
+    },
+    {
+      "id": "web-trust-boundaries",
+      "file": "original/web-trust-boundaries.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 500],
+      "sha256": "426a9bd1cf997620f51ffa779c85313fe938468935bd3676e718ce9d5bf63f9b",
+      "title": "Web 请求中的解析器与信任边界",
+      "alt": "Web 请求依次经过浏览器、边缘组件、应用和数据服务，并跨越解释、信任和权限边界",
+      "license": "MIT",
+      "placements": [{"page": "docs/web/index.md", "figure_id": "fig-web-trust-boundaries", "role": "wide"}]
+    },
+    {
+      "id": "pwn-layers",
+      "file": "original/pwn-layers.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 480],
+      "sha256": "149a1ca4781365693b41a8dcda86ec6b70b93a04fc4c5888cb3ca35f371977cb",
+      "title": "从源码到运行时状态",
+      "alt": "源码经过编译、链接和装载成为包含代码、数据、堆、映射、共享库和栈的运行进程",
+      "license": "MIT",
+      "placements": [{"page": "docs/pwn/index.md", "figure_id": "fig-pwn-layers", "role": "wide"}]
+    },
+    {
+      "id": "reverse-triangulation",
+      "file": "original/reverse-triangulation.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 460],
+      "sha256": "b958cda3b14713cba23de796237b8613d7dd626c97dad1322b6d20320ab6f0e9",
+      "title": "逆向分析的证据三角",
+      "alt": "静态分析、动态分析和黑盒实验共同约束一个可检验的程序语义模型",
+      "license": "MIT",
+      "placements": [{"page": "docs/reverse/index.md", "figure_id": "fig-reverse-triangulation", "role": "wide"}]
+    },
+    {
+      "id": "crypto-boundaries",
+      "file": "original/crypto-boundaries.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 470],
+      "sha256": "1e5805a55103e95509a05e4f0e9c5d04fa6ca2f4b9db4153c439aba2d0a3323e",
+      "title": "密码系统的四层边界",
+      "alt": "消息表示、密码原语、模式协议和实现环境组成密码系统的四层边界",
+      "license": "MIT",
+      "placements": [{"page": "docs/crypto/index.md", "figure_id": "fig-crypto-boundaries", "role": "wide"}]
+    },
+    {
+      "id": "nist-forensic-process",
+      "file": "external/nist-forensic-process.png",
+      "origin": "external",
+      "source_id": "nist-sp-800-86",
+      "format": "PNG",
+      "dimensions": [1180, 430],
+      "sha256": "aae39faa6cc0532b394bb46e25db2ed958f37a34eae56b9e8eee278ef71cd514",
+      "title": "NIST forensic process",
+      "alt": "NIST 取证流程由 Collection、Examination、Analysis 和 Reporting 四阶段组成，并把介质逐步转化为证据",
+      "source_label": "Figure 3-1, PDF page 25, printed page 3-1",
+      "transform": {
+        "renderer": "Poppler pdftoppm 26.07.0 at 180 dpi",
+        "operation": "Top-left PDF-points crop [70, 360, 542, 532] from a 612 × 792 point page; metadata stripped; content unchanged"
+      },
+      "visible_text": "Collection; Examination; Analysis; Reporting; Media; Data; Information; Evidence",
+      "placements": [{"page": "docs/forensics/index.md", "figure_id": "fig-nist-forensic-process", "role": "wide"}]
+    },
+    {
+      "id": "misc-triage",
+      "file": "original/misc-triage.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 470],
+      "sha256": "292a3ee19437bdaa9029b178feb2b10e0123001102ee3c90ae0cdf653a5f8ad3",
+      "title": "Misc 题的低成本分类图",
+      "alt": "陌生对象先按文本字节、媒体容器、交互协议和状态系统分类，再选择相应实验路径",
+      "license": "MIT",
+      "placements": [{"page": "docs/misc/index.md", "figure_id": "fig-misc-triage", "role": "wide"}]
+    },
+    {
+      "id": "writeup-graph",
+      "file": "original/writeup-graph.svg",
+      "origin": "original",
+      "format": "SVG",
+      "dimensions": [960, 410],
+      "sha256": "38a38acb27f680e3e9c1f7289c6f9208fc2c83126edaff58f717ac3486e283e0",
+      "title": "Writeup 在知识图谱中的位置",
+      "alt": "一篇可复现 Writeup 把前置知识和原始证据连接到条件变种、防御与同构问题",
+      "license": "MIT",
+      "placements": [{"page": "docs/writeups/index.md", "figure_id": "fig-writeup-graph", "role": "wide"}]
+    }
+  ],
+  "coverage": [
+    {"page": "docs/index.md", "status": "figure", "requires_reference": false, "reason": "导航首页，知识地图承担整体定向"},
+    {"page": "docs/changelog.md", "status": "exception", "requires_reference": false, "reason": "按日期组织的变更记录，图示不会增加检索价值"},
+    {"page": "docs/resources.md", "status": "exception", "requires_reference": false, "reason": "带说明的链接目录，外部来源已直接作为条目呈现"},
+    {"page": "docs/guide/roadmap.md", "status": "figure", "requires_reference": true, "reason": "路线图表达阶段、回流和主方向关系"},
+    {"page": "docs/guide/methodology.md", "status": "figure", "requires_reference": true, "reason": "循环图表达假设、实验、验证和复现"},
+    {"page": "docs/guide/lab-safety.md", "status": "figure", "requires_reference": true, "reason": "边界图区分授权范围与技术隔离"},
+    {"page": "docs/guide/tooling.md", "status": "figure", "requires_reference": true, "reason": "证据链图防止把工具输出误作事实"},
+    {"page": "docs/fundamentals/index.md", "status": "figure", "requires_reference": true, "reason": "分层图连接跨分类共同基础"},
+    {"page": "docs/fundamentals/bytes-encoding.md", "status": "figure", "requires_reference": true, "reason": "来源明确的内存图把抽象端序映射到地址"},
+    {"page": "docs/web/index.md", "status": "figure", "requires_reference": true, "reason": "数据流图定位解析、信任与权限边界"},
+    {"page": "docs/pwn/index.md", "status": "figure", "requires_reference": true, "reason": "分层图连接编译产物、装载与运行时内存"},
+    {"page": "docs/reverse/index.md", "status": "figure", "requires_reference": true, "reason": "证据三角表达静态、动态和黑盒校准"},
+    {"page": "docs/crypto/index.md", "status": "figure", "requires_reference": true, "reason": "四层图区分表示、原语、协议和实现问题"},
+    {"page": "docs/forensics/index.md", "status": "figure", "requires_reference": true, "reason": "NIST 原图提供取证流程的权威过程模型"},
+    {"page": "docs/misc/index.md", "status": "figure", "requires_reference": true, "reason": "分类图把陌生对象连接到低成本观察路径"},
+    {"page": "docs/writeups/index.md", "status": "figure", "requires_reference": false, "reason": "索引图表达题解与专题之间的知识关系"},
+    {"page": "docs/writeups/template.md", "status": "exception", "requires_reference": false, "reason": "操作型写作清单，额外图会重复方法页而打断使用"}
+  ]
+}

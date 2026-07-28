@@ -2,6 +2,11 @@
 
 CTF 分类不同，但底层反复出现同一组能力：把输入还原成字节、理解协议和文件格式、观察程序状态、写小脚本验证假设。
 
+<figure class="ctf-figure ctf-figure--wide" id="fig-foundation-stack" data-asset="foundation-stack" markdown="1">
+[![位和字节向上构成文件、协议、进程和各类 CTF 问题的分层关系](../assets/figures/original/foundation-stack.svg){ loading="lazy" decoding="async" width="960" height="430" }](../assets/figures/original/foundation-stack.svg){ .ctf-figure__media }
+<figcaption>越靠下的模型越容易跨题型复用；越靠上的分类越依赖具体组件、版本和题目约束。</figcaption>
+</figure>
+
 ## 总览
 
 | 模块 | 核心问题 | 常见分类 |
@@ -113,3 +118,10 @@ CTF 中最常用的部分：
 5. C 内存与基础汇编；
 6. 文件格式、调试与抓包；
 7. 根据主方向补数学、编译或浏览器模型。
+
+## Reference
+
+- [RFC 1122 · Requirements for Internet Hosts — Communication Layers](https://www.rfc-editor.org/rfc/rfc1122)：互联网主机的通信分层与协议要求。
+- [Linux man-pages](https://man7.org/linux/man-pages/)：Linux 系统调用、文件、进程和网络接口。
+- [System V Application Binary Interface](https://refspecs.linuxfoundation.org/elf/abi386-4.pdf)：目标文件、装载与进程接口的基础规范。
+- [Python Standard Library](https://docs.python.org/3/library/)：字节、结构化数据、网络、压缩和哈希模块。
