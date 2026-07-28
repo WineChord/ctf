@@ -23,10 +23,12 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements.txt
 python scripts/check_content.py
+python scripts/check_copywriting.py
 python scripts/check_figures.py
 python scripts/check_python.py
 python scripts/check_rendering.py
 mkdocs build --strict
+python scripts/check_copywriting.py --site-dir site
 python scripts/check_figures.py --site-dir site
 python scripts/check_rendering.py --site-dir site --browser
 mkdocs serve
@@ -39,6 +41,7 @@ mkdocs serve
 - `docs/`：网站正文
 - `mkdocs.yml`：站点配置与导航
 - `scripts/check_content.py`：内容与敏感信息模式检查
+- `scripts/check_copywriting.py`：中英文混排、数字单位与全角标点检查
 - `scripts/check_figures.py`：图表来源、许可、资产、位置与渲染检查
 - `scripts/check_python.py`：逐个检查完整 Python 代码块
 - `scripts/check_rendering.py`：校对 Markdown、公式、构建产物与浏览器渲染

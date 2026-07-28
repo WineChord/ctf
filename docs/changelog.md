@@ -2,6 +2,10 @@
 
 ## 2026-07-28
 
+### 排版质量
+
+- 为正文、站点配置、原创图示与生成页面加入混排检查，覆盖中文与英文、中文与数字、数字与单位之间的空格，以及全角标点间距。
+
 ### 图表与证据
 
 - 为[学习路线](guide/roadmap.md)、[解题方法](guide/methodology.md)、[实验安全](guide/lab-safety.md)、[工具链](guide/tooling.md)、[共同基础](fundamentals/index.md)及 [Web](web/index.md)、[Pwn](pwn/index.md)、[逆向](reverse/index.md)、[密码学](crypto/index.md)、[数字取证](forensics/index.md)、[Misc](misc/index.md) 加入与正文紧密对应的语义图。
