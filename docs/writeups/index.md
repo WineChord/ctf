@@ -2,11 +2,6 @@
 
 Writeup 按核心知识和证据类型组织，而不是只按比赛日期排列。一道题可以关联多个分类，但应有一个主入口和明确的前置知识。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-writeup-graph" data-asset="writeup-graph" markdown="1">
-[![一篇可复现 Writeup 把前置知识和原始证据连接到条件变种、防御与同构问题](../assets/figures/original/writeup-graph.svg){ loading="lazy" decoding="async" width="960" height="410" }](../assets/figures/original/writeup-graph.svg){ .ctf-figure__media }
-<figcaption>题目名称负责定位实例，知识关系负责让一次解法在新版本、新保护或新协议中继续有用。</figcaption>
-</figure>
-
 ## 当前内容
 
 知识库刚建立，首批内容以可复用基础和分析框架为主：

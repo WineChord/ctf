@@ -12,11 +12,6 @@
 
 高质量结论通常由三者互相校准。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-reverse-triangulation" data-asset="reverse-triangulation" markdown="1">
-[![静态分析、动态分析和黑盒实验共同约束一个可检验的程序语义模型](../assets/figures/original/reverse-triangulation.svg){ loading="lazy" decoding="async" width="960" height="460" }](../assets/figures/original/reverse-triangulation.svg){ .ctf-figure__media }
-<figcaption>静态结果描述“可能发生什么”，动态结果描述“这次发生了什么”，黑盒实验则限制“输入和输出必须满足什么”。</figcaption>
-</figure>
-
 ## 程序恢复层次
 
 ```text

@@ -2,11 +2,6 @@
 
 工具箱应围绕可复现流程组织，而不是按“安装过什么”堆积。每个工具都要知道输入、输出、修改行为、版本和可能的误判。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-evidence-pipeline" data-asset="evidence-pipeline" markdown="1">
-[![原始对象经过工具解析形成候选解释，再由独立验证支持有限结论](../assets/figures/original/evidence-pipeline.svg){ loading="lazy" decoding="async" width="960" height="390" }](../assets/figures/original/evidence-pipeline.svg){ .ctf-figure__media }
-<figcaption>工具把字节转换成更易观察的表示；关键结论仍要回到规范、原始数据或运行时行为验证。</figcaption>
-</figure>
-
 ## 基础工作台
 
 | 层次 | 常用工具 | 主要用途 |

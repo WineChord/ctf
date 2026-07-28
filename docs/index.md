@@ -2,11 +2,6 @@
 
 CTF 与安全知识库。仅用于赛事、靶场和授权研究。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-ctf-domain-map" data-asset="ctf-domain-map" markdown="1">
-[![共同基础和证据驱动方法连接 Web、Pwn、逆向、密码、取证与 Misc 六个方向](assets/figures/original/ctf-domain-map.svg){ loading="eager" decoding="async" width="960" height="430" }](assets/figures/original/ctf-domain-map.svg){ .ctf-figure__media }
-<figcaption>知识库以共同基础和证据驱动方法为中心；分类是进入问题的路径，复盘负责把一次解法连接成可迁移知识。</figcaption>
-</figure>
-
 ## 快速开始
 
 - [学习路线](guide/roadmap.md)

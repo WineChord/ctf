@@ -12,7 +12,6 @@ MARKDOWN_FILES = [
     *sorted((ROOT / "docs").rglob("*.md")),
 ]
 CONFIG_FILES = [ROOT / "mkdocs.yml"]
-SVG_FILES = sorted((ROOT / "docs" / "assets" / "figures" / "original").glob("*.svg"))
 
 CJK = r"\u3400-\u4dbf\u4e00-\u9fff\uf900-\ufaff"
 ASCII_WORD = r"A-Za-z0-9"
@@ -285,8 +284,6 @@ for file in MARKDOWN_FILES:
     errors.extend(check_markdown(file))
 for file in CONFIG_FILES:
     errors.extend(check_plain(file, visible_markdown))
-for file in SVG_FILES:
-    errors.extend(check_plain(file, visible_svg))
 
 rendered_count = 0
 if args.site_dir:
@@ -301,6 +298,6 @@ if errors:
     print("\n".join(errors), file=sys.stderr)
     raise SystemExit(1)
 
-total = len(MARKDOWN_FILES) + len(CONFIG_FILES) + len(SVG_FILES)
+total = len(MARKDOWN_FILES) + len(CONFIG_FILES)
 suffix = f"，{rendered_count} 个生成页面" if args.site_dir else ""
 print(f"文案排版检查通过：{total} 个读者可见源文件{suffix}")

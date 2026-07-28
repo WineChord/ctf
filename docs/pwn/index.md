@@ -6,11 +6,6 @@ Pwn 研究程序在真实机器模型中的行为：源代码经过编译、链�
 
 ## 从源码到进程
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-pwn-layers" data-asset="pwn-layers" markdown="1">
-[![源码经过编译、链接和装载成为包含代码、数据、堆、映射、共享库和栈的运行进程](../assets/figures/original/pwn-layers.svg){ loading="lazy" decoding="async" width="960" height="480" }](../assets/figures/original/pwn-layers.svg){ .ctf-figure__media }
-<figcaption>文件偏移、虚拟地址和某次调试中的寄存器值属于不同坐标系；先确认当前证据所在层，再连接它们。</figcaption>
-</figure>
-
 每一层都有自己的证据：源码推断、反汇编、ELF 元数据、调试器状态和运行时系统调用不能混为一谈。
 
 ## 必备机器模型

@@ -2,11 +2,6 @@
 
 CTF 经常奖励创造性，但稳定的创造性仍依赖方法。下面的流程适用于多数分类：先建立证据边界，再分层建模，用最小实验排除假设，最后把结果整理成可复现知识。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-method-cycle" data-asset="method-cycle" markdown="1">
-[![原始证据经过低成本观察、可证伪假设、最小实验、交叉验证和干净复现形成结论](../assets/figures/original/method-cycle.svg){ loading="lazy" decoding="async" width="960" height="440" }](../assets/figures/original/method-cycle.svg){ .ctf-figure__media }
-<figcaption>失败实验不是需要隐藏的岔路：只要判据稳定，它会更新假设并缩小下一轮搜索空间。</figcaption>
-</figure>
-
 ## 1. 先确认范围
 
 记录：

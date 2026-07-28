@@ -2,11 +2,6 @@
 
 Misc 不是“没有分类”，而是强调快速建模、跨领域迁移和自动化。题目可能涉及编程、协议、Jail、OSINT、二维码、音频、游戏、区块链或自定义系统。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-misc-triage" data-asset="misc-triage" markdown="1">
-[![陌生对象先按文本字节、媒体容器、交互协议和状态系统分类，再选择相应实验路径](../assets/figures/original/misc-triage.svg){ loading="lazy" decoding="async" width="960" height="470" }](../assets/figures/original/misc-triage.svg){ .ctf-figure__media }
-<figcaption>先确定可观察对象和成功判据，再决定是否需要格式解析、协议自动化、搜索优化或跨域工具。</figcaption>
-</figure>
-
 ## 第一轮分类
 
 先问：

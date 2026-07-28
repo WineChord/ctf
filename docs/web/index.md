@@ -4,11 +4,6 @@ Web 题的核心不是记住请求片段，而是追踪数据穿过浏览器、�
 
 ## 请求生命周期
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-web-trust-boundaries" data-asset="web-trust-boundaries" markdown="1">
-[![Web 请求依次经过浏览器、边缘组件、应用和数据服务，并跨越解释、信任和权限边界](../assets/figures/original/web-trust-boundaries.svg){ loading="lazy" decoding="async" width="960" height="500" }](../assets/figures/original/web-trust-boundaries.svg){ .ctf-figure__media }
-<figcaption>同一串字节在不同组件中可能拥有不同语义；安全分析要同时追踪数据流和每次跨边界时重新建立的信任。</figcaption>
-</figure>
-
 题目往往发生在边界处：两个组件对路径、编码、长度、Host、参数或身份状态的理解不同。
 
 ## 必备基础

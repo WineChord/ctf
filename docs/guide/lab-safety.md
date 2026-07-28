@@ -13,11 +13,6 @@
 
 CTF 平台的授权通常只覆盖题目提供的实例，不覆盖平台基础设施、其他选手、第三方服务或相邻网段。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-authorized-lab" data-asset="authorized-lab" markdown="1">
-[![目标、授权、时间和动作四项边界共同约束一个资源受控的隔离实验室](../assets/figures/original/authorized-lab.svg){ loading="lazy" decoding="async" width="960" height="430" }](../assets/figures/original/authorized-lab.svg){ .ctf-figure__media }
-<figcaption>授权边界回答“可以对什么做什么”，隔离环境回答“如何把意外影响限制在可回滚范围内”。</figcaption>
-</figure>
-
 ## 环境隔离
 
 推荐按风险从低到高选择：

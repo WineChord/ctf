@@ -10,7 +10,6 @@ copyright: Copyright &copy; 2026 WineChord
 theme:
   name: material
   language: zh
-  favicon: assets/favicon.svg
   icon:
     logo: material/shield-lock-outline
     repo: fontawesome/brands/github

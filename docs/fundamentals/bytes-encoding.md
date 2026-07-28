@@ -151,12 +151,12 @@ if __name__ == "__main__":
 小端（little-endian） 78 56 34 12
 ```
 
-端序只对多字节对象有意义；单个字节没有端序。网络协议常用大端，因此也称 network byte order；x86/x86-64 内存通常是小端。
-
 <figure class="ctf-figure ctf-figure--portrait" id="fig-big-endian" data-asset="big-endian" data-source="wikimedia-big-endian" markdown="1">
 [![32 位整数 0A0B0C0D 在大端内存中依次存为 0A、0B、0C、0D](../assets/figures/external/big-endian.png){ loading="lazy" decoding="async" width="840" height="750" }](https://commons.wikimedia.org/w/index.php?title=File:Big-Endian.svg&oldid=823465610){ .ctf-figure__media }
-<figcaption>大端序把最高有效字节放在最低地址。图：R. S. Shaw，<a href="https://commons.wikimedia.org/w/index.php?title=File:Big-Endian.svg&amp;oldid=823465610">Wikimedia Commons 固定版本</a>；作者释入 <a href="https://commons.wikimedia.org/wiki/File:Big-Endian.svg#Licensing">Public Domain</a>。本站版本仅栅格化、补白并移除元数据。</figcaption>
+<figcaption>图中地址从 <code>a</code> 递增到 <code>a+3</code>，高有效字节 <code>0A</code> 位于最低地址，这正是大端布局；换成小端时四个字节的地址顺序反转，而整数值本身不变。图源：R. S. Shaw，<a href="https://commons.wikimedia.org/w/index.php?title=File:Big-Endian.svg&oldid=823465610">Wikimedia Commons 固定修订</a>，作者已作 <a href="https://commons.wikimedia.org/wiki/File:Big-Endian.svg#Licensing">Public Domain dedication</a>。</figcaption>
 </figure>
+
+端序只对多字节对象有意义；单个字节没有端序。网络协议常用大端，因此也称 network byte order；x86/x86-64 内存通常是小端。
 
 Python `struct` 能明确指定布局：
 

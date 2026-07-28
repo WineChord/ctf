@@ -2,11 +2,6 @@
 
 CTF 分类不同，但底层反复出现同一组能力：把输入还原成字节、理解协议和文件格式、观察程序状态、写小脚本验证假设。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-foundation-stack" data-asset="foundation-stack" markdown="1">
-[![位和字节向上构成文件、协议、进程和各类 CTF 问题的分层关系](../assets/figures/original/foundation-stack.svg){ loading="lazy" decoding="async" width="960" height="430" }](../assets/figures/original/foundation-stack.svg){ .ctf-figure__media }
-<figcaption>越靠下的模型越容易跨题型复用；越靠上的分类越依赖具体组件、版本和题目约束。</figcaption>
-</figure>
-
 ## 总览
 
 | 模块 | 核心问题 | 常见分类 |

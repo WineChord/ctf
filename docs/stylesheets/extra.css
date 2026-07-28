@@ -1,5 +1,29 @@
 :root {
   --md-text-font: "PingFang SC";
+  --wc-inline-math-baseline-shift: -0.22em;
+}
+
+.md-typeset span.arithmatex {
+  display: inline-block;
+  max-width: none;
+  overflow: visible;
+  vertical-align: var(--wc-inline-math-baseline-shift);
+}
+
+.md-typeset div.arithmatex {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.md-typeset .md-typeset__table {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
 .ctf-figure {

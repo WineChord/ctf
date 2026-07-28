@@ -2,11 +2,6 @@
 
 CTF 覆盖的技术面很宽。更有效的路线不是同时学习所有分类，而是先建立共同基础和解题闭环，再选择一个主方向深入，同时保留跨分类迁移能力。
 
-<figure class="ctf-figure ctf-figure--wide" id="fig-learning-route" data-asset="learning-route" markdown="1">
-[![从安全边界、共同基础到主方向深挖和迁移复盘的学习路线](../assets/figures/original/learning-route.svg){ loading="lazy" decoding="async" width="960" height="380" }](../assets/figures/original/learning-route.svg){ .ctf-figure__media }
-<figcaption>路线不是一次性的直线：比赛复盘会暴露新的基础缺口，再回流到下一轮训练。</figcaption>
-</figure>
-
 ## 阶段 0：工作环境与边界
 
 开始之前先建立三个习惯：
